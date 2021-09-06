@@ -1,8 +1,12 @@
-<h1>Lista de Contatos</h1>
-<ul>
-    <% @VarListaContato.each do |nomeRef| %>
+
+
+ <h1>Lista de Contatos</h1>
+ <ul>
+   <% @VarListaContato.each do |nomeRef| %>
     <li>
-    <%= nomeRef.Nome %>
+    <%= link_to nomeRef.Nome, nomeRef %>   
+       
+ 
     </li>
     <% end %>
 </ul>
